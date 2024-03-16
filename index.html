@@ -1,31 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&family=Ojuju:wght@200..800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weihe Zheng</title>
+  <style>
+    .first-color { 
+      background: #f9ecec; 
+    }
+    .second-color { 
+      background: #f0d9da; 
+    }
+    .third-color { 
+      background: #c8d9eb; 
+    }
+    .fourth-color { 
+      background: #ecf2f9; 
+    }
+    body {
+      font-family:  Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #c8d9eb; /* Third color as the main background */
+      color: #000; /* Black text color */
+    }
+    header {
+      position: relative;
+      color: #f0d9da; /* Second color for text */
+      padding: 20px 0;
+      background-color: #f9ecec; /* This can be replaced with a class if needed */
+      text-align: center;
+      overflow: hidden;
+    }
+    header::after {
+      content: 'This is the way. Too far away. My way. The only way.';
+      letter-spacing: 10px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      pointer-events: none;
+      width: 100%;
+      height: 100%;
+      display: block;
+      line-height: 40px;
+      color: #f0d9da; /* Second color for text */
+    }
+    .container {
+      width: 100%;
+      text-align: center;
+      padding: 100px 0;
+      background: #ecf2f9; /* Fourth color */
+    }
+    .intro h1 {
+      font-size: 40em;
+      font-family: 'Liu Jian Mao Cao', ;
+      margin: 0;
+      color: pink; /* First color */
+    }
+    .intro p {
+      font-size: 1.2em;
+      color: #000; /* Black text color */
+    }
+    .profile-pic {
+      width: 500px;
+      height: auto;
+      border-radius: 5%;
+      margin: 20px auto;
+      display: block;
+    }
+    .contact-info {
+      font-size: 1em;
+      color: #000; /* Black text color */
+    }
+
+  </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Way's website</h1>
-            <p>hello@pia-quinn.com</p>
-        </header>
-        <main>
-            <h2>PORTFOLIO</h2>
-            <h2>PORT</h2>
-            <div class="image-container">
-                <img src="portfolio-image.jpg" alt="Portfolio Image">
-            </div>
-            <p>I'm Pia, a stylist and creative based between New York and London.</p>
-            <p>Before fashion, I was a journalist.</p>
-            <p>After fashion, I'll be an icon.</p>
-        </main>
-        <footer>
-            <p>Your trial ends in 14 days. Upgrade now to get the most out of your site.</p>
-            <button>SUBSCRIBE</button>
-        </footer>
-    </div>
+
+<header>
+</header>
+
+<div class="container third-color">
+  <img src="Way_Zheng.jpg" alt="Weihe Zheng" class="profile-pic">
+  <h1>WayWeihe Zheng 郑玮禾</h1>
+
+  <p>Nanjing, China🇨🇳 + Los Angeles, CA🇺🇸</p>
+  <p>Computer Engineering and Computer Science @ USC Viterbi School of Engineering</p>
+  <div class="contact-info">
+    <p>Email: wayzheng@usc.edu | Phone: 413-210-8059</p>
+  </div>
+</div>
+
 </body>
 </html>
