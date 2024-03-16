@@ -2,74 +2,73 @@
 <html lang="en">
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&family=Ojuju:wght@200..800&display=swap" rel="stylesheet">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Weihe Zheng</title>
-<style>
-  body {
-    font-family: 'Liu Jian Mao Cao', Helvetica, Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #c8d9eb; /* Dark blue background */
-    color: #f9ecec; /* Light pink text color */
-  }
-  header {
-    background-color: #012169; /* Dark blue background */
-    color: #f0d9da; /* Light pink text color */
-    padding: 20px 0;
-    text-align: center;
-  }
-  .container {
-    width: 100%;
-    text-align: center;
-    padding: 50px 0;
-  }
-  .intro h1 {
-    font-size: 10em;
-    margin: 0;
-    padding: 0;
-    color: #f1c4e0; /* Light pink text color */
-  }
-  .intro p {
-    font-size: 1.2em;
-    margin: 10px 0;
-  }
-  .profile-pic {
-    width: 200px;
-    height: auto;
-    border-radius: 50%;
-    margin-top: 20px;
-  }
-  .contact-info {
-    background-color: #012169; /* Dark blue background */
-    padding: 10px;
-    margin-top: 20px;
-    font-size: 1em;
-  }
-  .button {
-    background-color: #f1c4e0; /* Light pink background */
-    color: #012169; /* Dark blue text color */
-    padding: 15px 30px;
-    text-decoration: none;
-    display: inline-block;
-    margin: 20px 10px;
-    border: none;
-    cursor: pointer;
-    font-size: 1em;
-    border-radius: 2px;
-    transition: background-color 0.3s ease;
-  }
-  .button:hover {
-    background-color: #e3a6c7; /* Slightly lighter pink for hover */
-  }
-</style>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&family=Ojuju:wght@200..800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weihe Zheng</title>
+  <style>
+    .first-color { background: #f9ecec; }
+    .second-color { background: #f0d9da; }
+    .third-color { background: #c8d9eb; }
+    .fourth-color { background: #ecf2f9; }
+    body {
+      font-family: 'Ojuju', 'Liu Jian Mao Cao', Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #c8d9eb; /* Using third-color class */
+      color: #000; /* Black text color */
+    }
+    header {
+      background-color: #f0d9da; /* Using second-color class */
+      color: #fff; /* White text color */
+      padding: 20px 0;
+      font-family: 'Ojuju', sans-serif;
+    }
+    header h2 {
+      margin: 0;
+      font-size: 1.5em;
+      font-weight: normal;
+      letter-spacing: 5px;
+    }
+    .container {
+      text-align: center;
+      padding: 100px 0; /* Increase padding for larger vertical spacing */
+      background-color: #ecf2f9; /* Using fourth-color class */
+    }
+    .intro h1 {
+      font-size: 4.5em; /* Adjusted for balance */
+      margin: 0;
+      color: #f9ecec; /* Using first-color class */
+      font-family: 'Liu Jian Mao Cao', cursive;
+    }
+    .intro p {
+      font-size: 1.5em;
+      margin: 10px 0;
+      color: #000; /* Black text color */
+    }
+    .profile-pic {
+      display: block;
+      width: 200px;
+      height: auto;
+      border-radius: 50%;
+      margin: 30px auto; /* Center the image */
+    }
+    .contact-info {
+      background-color: transparent;
+      padding: 10px;
+      font-size: 1.2em;
+      color: #000; /* Black text color */
+    }
+  </style>
 </head>
 <body>
 
 <header>
-  <h2>WAY WAY WAY WAY WAY WAY</h2>
+  <!-- Repeated heading now uses CSS for the repeating background -->
+  <div style="background: repeating-linear-gradient(to right, #012169, #012169 10px, #f0d9da 10px, #f0d9da 20px);">
+    <h2>WAY WAY WAY WAY WAY WAY</h2>
+  </div>
 </header>
 
 <div class="container">
@@ -81,8 +80,6 @@
     <div class="contact-info">
       <p>Email: email@example.com | Phone: (123) 456-7890</p>
     </div>
-    <a class="button" href="#experience">Experience</a>
-    <a class="button" href="#projects">Projects</a>
   </div>
 </div>
 
