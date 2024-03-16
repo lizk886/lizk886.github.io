@@ -2,103 +2,228 @@
 <html lang="en">
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&family=Ojuju:wght@200..800&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&family=Ojuju:wght@200..800&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weihe Zheng</title>
   <style>
-    .first-color { 
-      background: #f9ecec; 
-    }
-    .second-color { 
-      background: #f0d9da; 
-    }
-    .third-color { 
-      background: #c8d9eb; 
-    }
-    .fourth-color { 
-      background: #ecf2f9; 
-    }
-    .zcool-xiaowei-regular {
-      font-family: "ZCOOL XiaoWei", sans-serif;
-      font-weight: 400;
-      font-style: normal;
-    }
-
     body {
-      font-family:  Helvetica, sans-serif;
+      padding-top: 60px;
+      font-family:'ZCOOL XiaoWei', sans-serif;;
       margin: 0;
-      padding: 0;
-      background-color: #c8d9eb; /* Third color as the main background */
+      padding: 5;
+      background-color:white; 
       color: #000; /* Black text color */
     }
     header {
-      position: relative;
-      color: #f0d9da; /* Second color for text */
-      padding: 20px 0;
-      background-color: #f9ecec; /* This can be replaced with a class if needed */
-      text-align: center;
-      overflow: hidden;
-    }
-    header::after {
-      content: 'This is the way. Too far away. My way. The only way.';
-      letter-spacing: 10px;
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
-      white-space: nowrap;
-      overflow: hidden;
-      pointer-events: none;
       width: 100%;
-      height: 100%;
-      display: block;
-      line-height: 40px;
-      color: #f0d9da; /* Second color for text */
+      background: wheat; /* Change the color as needed */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 20px; /* Adjust the padding as needed */
+      transition: top 0.3s;
     }
+
+
+    .header-left {
+      float: left;
+      font-size: 19px; /* Adjust the size as needed */
+      color: burlywood;
+    }
+
+    .header-right {
+      float: right;
+      padding-right: 2em;
+      font-size: 16px; /* Adjust the size as needed */
+    }
+
+    .header-right a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: grey;
+    }
+
     .container {
       width: 100%;
       text-align: center;
       padding: 100px 0;
-      background: #ecf2f9; /* Fourth color */
+      background: white; /* Fourth color */
     }
-    .intro h1 {
-      font-size: 40em;
-      font-family: 'ZCOOL XiaoWei', ;
+    h1 {
+      font-size: 5em; 
+      font-family: 'ZCOOL XiaoWei', sans-serif;
       margin: 0;
       color: pink; /* First color */
     }
+    h2 {
+      color: black; /* Choose a color that fits with your design */
+      font-family: 'ZCOOL XiaoWei', sans-serif; /* Use the font family that matches your style */
+      text-transform: uppercase; /* Optional: makes all letters uppercase */
+      text-align: center; /* Centers the text */
+      margin: 20px 0; /* Adds some space above and below the h2 */
+      font-weight: bold; /* Optional: adjusts the boldness of the text */
+      font-size: 24px; /* Sets the size of the font */
+    }
+ 
     .intro p {
       font-size: 1.2em;
       color: #000; /* Black text color */
-    }
-    .profile-pic {
-      width: 500px;
-      height: auto;
-      margin: 0px auto;
-      display: block;
     }
     .contact-info {
       font-size: 1em;
       color: #000; /* Black text color */
     }
 
+    .profile-section {
+      position: relative; /* Establishes a positioning context for child elements */
+      text-align: center; /* Centers the child elements */
+    }
+
+    .profile-pic {
+      width: 700px;
+      height: auto;
+      margin: 0 auto;
+      display: block;
+      margin-top: 0;
+    }
+    
+    
+    .name-overlay {
+      position: absolute; /* Positions the element relative to its nearest positioned ancestor */
+      top: -90px; /* Adjust this value to control the overlap. Negative values bring the text up over the image */
+      left: 0;
+      right: 0;
+      z-index: 5; /* Ensures the text appears above the image */
+      font-size: 8em; /* Example font size, adjust as needed */
+      color: wheat; /* Adjust color as needed */
+      font-family: 'ZCOOL XiaoWei', sans-serif; /* Your desired font */
+    }
+
+    .education-background {
+      margin-top: 10em;
+      background-image: url('naning.jpg');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      padding: 5px 10px;
+      text-align: left;
+      height: 250px; /* Fixed height */
+    }
+    .education-content {
+      background-color: white; /* White background for the text content */
+      text-align: center;
+      padding: 20px; /* Adjust padding as needed */
+      margin-left: 60%; /* Adjust to position the box on the right */
+      max-width: auto; /* Adjust width as needed */
+      font-size: 1em;
+    }
+    .school-name {
+      font-style: italic;
+      /* You can add more styles if needed */
+    }
+
+    .research-experience {
+      color: #333; /* Darker text for better readability */
+      padding: 20px 20px;
+      text-align: center;
+      margin-top: 10px; /* Add space between sections */
+    }
+
+    .interests {
+      background-color: wheat; /* A light orange background for a warm feel */
+      color: #333; /* Darker text for better readability */
+      padding: 20px;
+      text-align: left;
+      margin-top: 20px; /* Add space between sections */
+    }
+
   </style>
 </head>
 <body>
 
-<header>
-</header>
+  <header>
+    <div class="header-left">
+     WAY'S PERSONAL WEBSITE <3
+    </div>
+    <div class="header-right">
+      <a href="https://www.linkedin.com/in/wayzheng" target="_blank">LinkedIn</a>
+      <a href="https://github.com/lizk886" target="_blank">GitHub</a>
+    </div>
+  </header>
+  
 
 <div class="container third-color">
-  <img src="Way_Zheng.jpg" alt="Weihe Zheng" class="profile-pic">
-  <h1>WayWeihe Zheng 郑玮禾</h1>
-
-  <p>Nanjing, China🇨🇳 + Los Angeles, CA🇺🇸</p>
-  <p>Computer Engineering and Computer Science @ USC Viterbi School of Engineering</p>
-  <div class="contact-info">
-    <p>Email: wayzheng@usc.edu | Phone: 413-210-8059 | <a href="https://www.linkedin.com/in/wayzheng" target="_blank">LinkedIn</a></p>
+  <div class="profile-section">
+    <img src="Way_Zheng.jpg" alt="Weihe Zheng" class="profile-pic">
+    <h1 class="name-overlay">Way Zheng</h1>
   </div>
+  <p> Hi! I am Weihe Zheng 郑玮禾 and I go by Way.</p>
+  <p>Nanjing, China🇨🇳 + Los Angeles, CA🇺🇸</p>
+  <p>Computer Engineering and Computer Science @ <a href="https://viterbischool.usc.edu/" target="_blank">USC Viterbi School of Engineering</a></p>
+  <div class="contact-info">
+    <p>📧 wayzheng@usc.edu </p>
+    <p> 📱 413-210-8059</p>
+  </div>
+  <div class="education-background">
+    <p style="color: wheat;margin-top: 0.2em;">Xuanwu Lake, Nanjing</p>
+
+    <div class="education-content">
+      <h2>Education</h2>
+      <p><strong class="school-name">University of Southern California</strong> - B.S. in CECS, 2025</p>
+      <p><strong class="school-name">Smith College</strong> - B.S. in Engineering (transferred)</p>
+      
+      <!-- Add more educational background details as needed -->
+    </div>
+  </div>
+  <div class="research-experience">
+    <h2>Research Experience</h2>
+
+    <p><strong>2023.5-present</strong> : Undergradute Researcher at <a href="https://anrg.usc.edu/www/" target="_blank">Autonomous Networks Research Group</a>, mentoring by  <a href="https://viterbi.usc.edu/directory/faculty/Krishnamachari/Bhaskar" target="_blank">Bhaskar Krishnamachari</a></p>
+    <p><strong>2022.5-2022.8</strong> : SURF at Smith College</a>, work on VPN geolocation verification, mentored by <a href="https://www.smith.edu/people/shinyoung-cho" target="_blank">Shinyoung Cho</a></p>
+    <!-- Add more research details as needed -->
+  </div>
+  
+  <div class="interests">
+    <h2>Interests</h2>
+    <div style="display: flex; justify-content: space-between;">
+      <div style="flex: 1; padding-right: 10px;">
+        <h2>💃🎵🎤</h2>
+        <p>I've been passionate about dancing since the age of three, exploring various styles including Traditional Chinese dance, ballet, and hip-hop/jazz. My favorite Switch game is of course Just Dance, and I can sing too!</p>
+      </div>
+      <div style="flex: 1; padding-left: 5px; padding-right: 5px;">
+        <h2>🚗 /🏎️</h2>
+        <p>Driving is another joy of mine, with my most famaliar trip being a drive to In-N-Out for some animal fries and a protein-style burger.</p>
+      </div>
+      <div style="flex: 1; padding-left: 10px;">
+        <h2>☕️🥟🍜</h2>
+        <p>I'm a big fan of coffee and food hopping. I am your go-to guide if you want recommendations on nice restaurants, boba shop or dessert places around SoCal!</p>
+      </div>
+    </div>
+    
+  </div>
+  
+<script>
+  let lastScrollTop = 0; // This variable will hold the last scroll position
+
+  window.addEventListener("scroll", function() {
+    let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    if (currentScroll > lastScrollTop) {
+      // Scroll Down
+      document.querySelector("header").style.top = "-60px"; // Header height
+    } else {
+      // Scroll Up
+      document.querySelector("header").style.top = "0px";
+    }
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+  }, false);
+
+</script>
   
   </div>
 </div>
