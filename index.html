@@ -8,78 +8,94 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weihe Zheng</title>
   <style>
-    .first-color { background: #f9ecec; }
-    .second-color { background: #f0d9da; }
-    .third-color { background: #c8d9eb; }
-    .fourth-color { background: #ecf2f9; }
+    .first-color { 
+      background: #f9ecec; 
+    }
+    .second-color { 
+      background: #f0d9da; 
+    }
+    .third-color { 
+      background: #c8d9eb; 
+    }
+    .fourth-color { 
+      background: #ecf2f9; 
+    }
     body {
-      font-family: 'Ojuju', 'Liu Jian Mao Cao', Helvetica, Arial, sans-serif;
+      font-family: 'Ojuju', Helvetica, Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #c8d9eb; /* Using third-color class */
+      background-color: #c8d9eb; /* Third color as the main background */
       color: #000; /* Black text color */
     }
     header {
-      background-color: #f0d9da; /* Using second-color class */
-      color: #fff; /* White text color */
+      position: relative;
+      color: #f0d9da; /* Second color for text */
       padding: 20px 0;
-      font-family: 'Ojuju', sans-serif;
+      background-color: #012169; /* This can be replaced with a class if needed */
+      text-align: center;
+      overflow: hidden;
     }
-    header h2 {
-      margin: 0;
-      font-size: 1.5em;
-      font-weight: normal;
-      letter-spacing: 5px;
+    header::after {
+      content: 'way way way way way way way way way way way way ';
+      font-weight: bold;
+      letter-spacing: 10px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      pointer-events: none;
+      width: 100%;
+      height: 100%;
+      display: block;
+      line-height: 40px;
+      color: #f0d9da; /* Second color for text */
     }
     .container {
+      width: 100%;
       text-align: center;
-      padding: 100px 0; /* Increase padding for larger vertical spacing */
-      background-color: #ecf2f9; /* Using fourth-color class */
+      padding: 50px 0;
+      background: #ecf2f9; /* Fourth color */
     }
     .intro h1 {
-      font-size: 4.5em; /* Adjusted for balance */
-      margin: 0;
-      color: #f9ecec; /* Using first-color class */
+      font-size: 5em;
       font-family: 'Liu Jian Mao Cao', cursive;
+      margin: 0;
+      color: #f9ecec; /* First color */
     }
     .intro p {
-      font-size: 1.5em;
-      margin: 10px 0;
+      font-size: 1.2em;
       color: #000; /* Black text color */
     }
     .profile-pic {
-      display: block;
       width: 200px;
       height: auto;
       border-radius: 50%;
-      margin: 30px auto; /* Center the image */
+      margin: 20px auto;
+      display: block;
     }
     .contact-info {
-      background-color: transparent;
-      padding: 10px;
-      font-size: 1.2em;
+      font-size: 1em;
       color: #000; /* Black text color */
+    }
+    .emoji {
+      font-size: 2em;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <!-- Repeated heading now uses CSS for the repeating background -->
-  <div style="background: repeating-linear-gradient(to right, #012169, #012169 10px, #f0d9da 10px, #f0d9da 20px);">
-    <h2>WAY WAY WAY WAY WAY WAY</h2>
-  </div>
 </header>
 
-<div class="container">
-  <div class="intro">
-    <img src="way-success.png" alt="Weihe Zheng" class="profile-pic">
-    <h1>Weihe Zheng 郑玮禾</h1>
-    <p>From Nanjing, China. 🇨🇳 Based in Los Angeles, CA</p>
-    <p>Computer Engineering and Computer Science student at USC Viterbi School of Engineering</p>
-    <div class="contact-info">
-      <p>Email: email@example.com | Phone: (123) 456-7890</p>
-    </div>
+<div class="container third-color">
+  <img src="way-success.png" alt="Weihe Zheng" class="profile-pic">
+  <h1>Weihe Zheng 郑玮禾</h1>
+
+  <p>Nanjing, China🇨🇳 + Los Angeles, CA🇺🇸</p>
+  <p>Computer Engineering and Computer Science at USC Viterbi School of Engineering</p>
+  <div class="contact-info">
+    <p>Email: wayzheng@usc.edu | Phone: 413-210-8059</p>
   </div>
 </div>
 
