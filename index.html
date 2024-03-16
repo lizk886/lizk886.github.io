@@ -1,44 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Way's Personal Website</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  .container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .intro h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  .intro p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+  .profile-pic {
+    float: right;
+    margin-left: 20px;
+    width: 150px;
+    height: auto;
+  }
+  .contact-info {
+    background-color: #eee;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  .button {
+    background-color: #d35400;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+  }
+</style>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Experience</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
-            <a href="#">Resume</a>
-        </nav>
-    </header>
 
-    <main>
-        <section>
-            <h1>Hi, I'm Your Name</h1>
-            <p>and I'm ...</p>
-            <ul>
-                <li>originally from Your City, State</li>
-                <li>a Master's student majoring in Computer Science @ Your University</li>
-                <li>a previous software engineer intern @ Company Name in City, State</li>
-                <li>passionate about hobby1, hobby2, and hobby3</li>
-                <li>available at youremail@example.edu or (123) 456-7890</li>
-            </ul>
-            <p>Check out some of my work below!</p>
-            <button>Experience</button>
-            <button>Projects</button>
-        </section>
-        <section>
-            <img src="your-image.jpg" alt="Your Name">
-        </section>
-    </main>
+<header>
+  <h2>Dennis Wang</h2>
+</header>
 
-    <footer>
-        <!-- Add any footer content here -->
-    </footer>
+<div class="container">
+  <div class="intro">
+    <img src="profile-pic.jpg" alt="Dennis smiling" class="profile-pic">
+    <h1>Hi, I'm Weihe Zheng</h1>
+    <p>From Nanjing China, lived in Noho,MA, Now base in Los Angeles, CA</p>
+    <p>A Computer Engineering and Computer Science student at USC Viterbi School of Engineering</p>
+    <p>A previous software engineer intern @ Visa in Bellevue, WA</p>
+    <p>Passionate about badminton, chess, and classical music</p>
+    <div class="contact-info">
+      <p>Email: email@example.com | Phone: (123) 456-7890</p>
+    </div>
+    <button class="button">Experience</button>
+    <button class="button">Projects</button>
+  </div>
+</div>
+
+<footer>
+  <p>Check out some of my work below!</p>
+</footer>
+
 </body>
 </html>
