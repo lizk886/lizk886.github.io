@@ -1,0 +1,285 @@
+/* Global Styles */
+body {
+  padding-top: 60px;
+  font-family:'ZCOOL XiaoWei', sans-serif;;
+  margin: 0;
+  padding: 5;
+  background-color:rgba(255, 192, 203, 0.246); 
+  color: #000; /* Black text color */
+  padding-left: 100px; /* Space on the left */
+  padding-right: 100px; /* Space on the right */
+}
+
+/*style for the header*/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgb(255, 192, 203); /* Change the color as needed */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px; /* Adjust the padding as needed */
+  transition: top 0.3s;
+}
+
+.header-left {
+  float: left;
+  font-size: 21px; /* Adjust the size as needed */
+  color: rgb(250, 162, 175);
+}
+
+.header-right {
+  float: right;
+  padding-right: 3em;
+  font-size: 19px; /* Adjust the size as needed */
+}
+
+.header-right a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: rgb(240, 162, 175);
+}
+/*end: style for the header*/
+
+
+/*style for section one - profile*/
+.container {
+  width: 100%;
+  text-align: center;
+  padding: 100px 0;
+  background: transparent; 
+}
+h1 {
+  font-size: 10em; 
+  font-family: 'ZCOOL XiaoWei', sans-serif;
+  margin: 0;
+}
+h2 {
+  color: black; /* Choose a color that fits with your design */
+  font-family: 'ZCOOL XiaoWei', sans-serif; /* Use the font family that matches your style */
+  text-transform: uppercase; /* Optional: makes all letters uppercase */
+  text-align: center; /* Centers the text */
+  margin: 20px 10; /* Adds some space above and below the h2 */
+  font-weight: bold; /* Optional: adjusts the boldness of the text */
+  font-size: 24px; /* Sets the size of the font */
+}
+
+.contact-info {
+  font-size: 1em;
+  color: #000; 
+}
+
+.profile-section {
+  position: relative; /* Establishes a positioning context for child elements */
+  text-align: center; /* Centers the child elements */
+}
+
+.profile-pic {
+  width: 700px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  margin-top: 0;
+}
+
+.name-overlay {
+  position: absolute; /* Positions the element relative to its nearest positioned ancestor */
+  top: -90px; /* Adjust this value to control the overlap. Negative values bring the text up over the image */
+  left: 0;
+  right: 0;
+  z-index: 5; /* Ensures the text appears above the image */
+  font-size: 8em; /* Example font size, adjust as needed */
+  color: rgb(249, 159, 174); /* Adjust color as needed */
+  font-family: 'ZCOOL XiaoWei', sans-serif; /* Your desired font */
+}
+/*end: style for section one - profile*/
+
+
+/*style for section two - education*/
+.education-background {
+  margin-top: 5em;
+  background-image: url('naning.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 5px 10px;
+  text-align: left;
+  height: 250px; /* Fixed height */
+}
+.education-content {
+  background-color: rgba(245, 245, 245, 0.673); /* White background for the text content */
+  text-align: center;
+  padding: 20px; /* Adjust padding as needed */
+  margin-left: 60%; /* Adjust to position the box on the right */
+  max-width: auto; /* Adjust width as needed */
+  font-size: 1em;
+}
+.school-name {
+  font-style: italic;
+  /* You can add more styles if needed */
+}
+/*end: style for section two - education*/
+
+
+/*style for section three -  experience*/
+.research-experience {
+  color: #333; /* Darker text for better readability */
+  padding: 20px 20px;
+  text-align: center;
+  margin-top: 50px; /* Add space between sections */
+}
+.interests {
+  background-color: transparent; /* Make the background inside transparent */
+  border: 5px solid rgb(250, 162, 175); /* Add a wheat-colored border */
+  color: #333; /* Darker text for better readability */
+  padding: 20px; /* Space inside the section */
+  text-align: left;
+  margin-top: 40px; /* Add space between sections */
+  margin-bottom: 40px; /* Add space between sections */
+  border-radius: 10px; /* Optional: adds rounded corners */
+}
+.Projects {
+  background-color: pink; 
+  color: #333; /* Darker text for better readability */
+  padding: 20px 20px;
+  text-align: center;
+  margin-top: 30px; /* Add space between sections */
+  margin-bottom: 40px; /* Add space between sections */
+}
+.footer {
+  position: center; 
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.8em;
+  background-color:transparent;
+  color: grey;
+}
+/*end:style for section three -  experience*/
+
+
+
+.blog-section {
+ margin-top: 10px; /* Add space between sections */
+}
+
+/* Slider for the most recent blog post */
+.blog-slider {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.blog-slider .slide {
+  width: 100%;
+  max-width: 1000px; /* Control the max width */
+  position: relative;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Apply hover effect */
+}
+
+.blog-slider .slide img {
+  width: 100%;
+  height: 500px; /* Control the height of the image */
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.blog-slider .slide:hover {
+  transform: translateY(-10px); /* Hover effect for the featured image */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.blog-slider .slide .blog-content {
+  position: absolute;
+  top: 5px; /* Place the content near the top */
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 20px;
+  border-radius: 5px;
+  color: black;
+  font-size: 1.1rem;
+}
+
+.blog-slider .slide .blog-content h3 {
+  font-size: 1.3rem; /* Adjust font size */
+  margin-bottom: 30px;
+}
+
+.blog-slider .slide .blog-content p {
+  font-size: 0.9rem; /* Smaller paragraph text */
+  margin: 10px 0;
+  color: white; /* Lighter text color */
+}
+
+
+
+/* For mobile responsiveness */
+@media (max-width: 768px) {
+  .blog-slider .slide img {
+    height: 200px; /* Reduce height for smaller screens */
+  }
+
+  .blog-slider .slide .blog-content {
+    font-size: 1rem;
+  }
+}
+
+/* Grid layout for blog section */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 20px; /* Spacing between grid items */
+  padding: 20px;
+  justify-items: center; /* Centers items within each grid column */
+}
+
+.blog-card {
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+  background-color: #fff; /* Optionally add a background color */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.blog-card:hover {
+  transform: translateY(-10px); /* Slight upward movement */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+}
+
+.blog-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* For featured image */
+.featured {
+  grid-column: span 2; /* Spans across two columns */
+  max-width: 800px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .blog-grid {
+    grid-template-columns: 1fr; /* One column for smaller screens */
+  }
+  
+  .featured {
+    max-width: 100%;
+  }
+}
